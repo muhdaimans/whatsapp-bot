@@ -1,0 +1,32 @@
+# Node.js dependencies
+
+node_modules/
+
+# Environment variables
+
+.env
+.env.*
+
+# Logs
+
+*.log
+
+# System files
+
+.DS_Store
+Thumbs.db
+
+# Build folders
+
+dist/
+build/
+
+# IDE folders
+
+.vscode/
+.idea/
+
+# WhatsApp session files (optional)
+
+session/
+auth_info/
