@@ -8,8 +8,11 @@ app.use(express.json());
 
 // Initialize WhatsApp client
 const client = new Client({
-  authStrategy: new LocalAuth(), // session will be stored in .wwebjs_auth
-  puppeteer: { headless: true }, // headless Chrome
+  authStrategy: new LocalAuth(),
+  puppeteer: {
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  },
 });
 
 let isReady = false;
