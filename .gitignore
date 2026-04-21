@@ -30,3 +30,5 @@ build/
 
 session/
 auth_info/
+
+.wwebjs_cache/
